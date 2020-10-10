@@ -23,7 +23,7 @@
     Calculation of Partitioned RIP Propensity (PRP) profiles from multiple
     sequence alignments produced by program Clustal
 
-    Compilation:       gcc -o mk1prp mk1kprp.c
+    Compilation:       gcc -o mk1prp mk1prp.c
          Usage:       mk1prp XLA2.aln > XLA2.out
    
     Parameters:
@@ -144,7 +144,7 @@ int main(int argc, char *argv[])
   char *dd0=NULL,*nx0=NULL,*alseq=NULL,*s0=NULL,s1[100],ab[]="CTGA";
   FILE *inp=NULL;
 
-  if(argc!=2){ WR"= ERROR ! Usage: mk1prb clustal_ouput.aln !\n"); exit(1); }
+  if(argc!=2){ WR"= ERROR ! Usage: mk1prp clustal_ouput.aln !\n"); exit(1); }
   inp=fopen(argv[1],"rb");
   if(!inp){ WR"= ERROR ! File \"%s\" not found !\n",argv[1]); exit(1); }
 
